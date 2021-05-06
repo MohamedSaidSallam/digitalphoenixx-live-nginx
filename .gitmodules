@@ -1,0 +1,3 @@
+[submodule "FlashCards-API"]
+	path = FlashCards-API
+	url = https://github.com/TheDigitalPhoenixX/FlashCards-API.git
