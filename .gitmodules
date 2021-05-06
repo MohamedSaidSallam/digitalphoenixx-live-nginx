@@ -1,3 +1,6 @@
 [submodule "FlashCards-API"]
 	path = FlashCards-API
 	url = https://github.com/TheDigitalPhoenixX/FlashCards-API.git
+[submodule "masterquiz-backend"]
+	path = masterquiz-backend
+	url = https://github.com/rameziophobia/masterquiz-backend
