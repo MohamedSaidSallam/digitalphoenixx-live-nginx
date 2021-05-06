@@ -9,8 +9,19 @@ services:
     restart: always
     ports:
       - "80:80"
+    depends_on:
+      - flashcards-api
+      - masterquiz-api
 
   flashcards-api:
     extends:
       file: ./FlashCards-API/docker-compose.yml
       service: express
+    expose:
+      - "8000"
+  masterquiz-api:
+    extends:
+      file: ./masterquiz-backend/docker-compose.yml
+      service: express
+    expose:
+      - "8000"
