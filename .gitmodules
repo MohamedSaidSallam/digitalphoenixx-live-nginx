@@ -4,3 +4,6 @@
 [submodule "masterquiz-backend"]
 	path = masterquiz-backend
 	url = https://github.com/rameziophobia/masterquiz-backend
+[submodule "Spaced-Repetition-Backend"]
+	path = Spaced-Repetition-Backend
+	url = https://github.com/Zeitverschwender/Spaced-Repetition-Backend

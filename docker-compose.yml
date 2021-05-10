@@ -12,6 +12,7 @@ services:
     depends_on:
       - flashcards-api
       - masterquiz-api
+      - spacedrepetition-api
 
   flashcards-api:
     extends:
@@ -22,6 +23,12 @@ services:
   masterquiz-api:
     extends:
       file: ./masterquiz-backend/docker-compose.yml
+      service: express
+    expose:
+      - "8000"
+  spacedrepetition-api:
+    extends:
+      file: ./Spaced-Repetition-Backend/docker-compose.yml
       service: express
     expose:
       - "8000"
