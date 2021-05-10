@@ -7,3 +7,6 @@
 [submodule "Spaced-Repetition-Backend"]
 	path = Spaced-Repetition-Backend
 	url = https://github.com/Zeitverschwender/Spaced-Repetition-Backend
+[submodule "expense-tracker-backend"]
+	path = expense-tracker-backend
+	url = https://github.com/Zeitverschwender/expense-tracker-backend

@@ -13,6 +13,7 @@ services:
       - flashcards-api
       - masterquiz-api
       - spacedrepetition-api
+      - expense-tracker-api
 
   flashcards-api:
     extends:
@@ -29,6 +30,12 @@ services:
   spacedrepetition-api:
     extends:
       file: ./Spaced-Repetition-Backend/docker-compose.yml
+      service: express
+    expose:
+      - "8000"
+  expense-tracker-api:
+    extends:
+      file: ./expense-tracker-backend/docker-compose.yml
       service: express
     expose:
       - "8000"
