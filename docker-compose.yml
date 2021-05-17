@@ -22,27 +22,32 @@ services:
       service: express
     expose:
       - "8000"
+    restart: always
   masterquiz-api:
     extends:
       file: ./masterquiz-backend/docker-compose.yml
       service: express
     expose:
       - "8000"
+    restart: always
   spacedrepetition-api:
     extends:
       file: ./Spaced-Repetition-Backend/docker-compose.yml
       service: express
     expose:
       - "8000"
+    restart: always
   expense-tracker-api:
     extends:
       file: ./expense-tracker-backend/docker-compose.yml
       service: express
     expose:
       - "8000"
+    restart: always
   masterquiz:
     extends:
       file: ./MasterQuiz-Frontend/docker-compose.yml
       service: web
     expose:
       - "80"
+    restart: always
