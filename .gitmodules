@@ -10,3 +10,6 @@
 [submodule "expense-tracker-backend"]
 	path = expense-tracker-backend
 	url = https://github.com/Zeitverschwender/expense-tracker-backend
+[submodule "MasterQuiz-Frontend"]
+	path = MasterQuiz-Frontend
+	url = https://github.com/TheDigitalPhoenixX/MasterQuiz-Frontend

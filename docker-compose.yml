@@ -14,6 +14,7 @@ services:
       - masterquiz-api
       - spacedrepetition-api
       - expense-tracker-api
+      - masterquiz
 
   flashcards-api:
     extends:
@@ -39,3 +40,9 @@ services:
       service: express
     expose:
       - "8000"
+  masterquiz:
+    extends:
+      file: ./MasterQuiz-Frontend/docker-compose.yml
+      service: web
+    expose:
+      - "80"
